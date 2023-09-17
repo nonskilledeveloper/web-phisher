@@ -1,7 +1,6 @@
 use actix_files::NamedFile;
-use actix_web::{HttpRequest, HttpResponse, Result};
+use actix_web::{HttpRequest, web, HttpResponse, Result};
 use std::path::PathBuf;
-use actix_web::web;
 use serde::{Deserialize, Serialize}; 
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -22,11 +21,17 @@ async fn post_data(info: web::Json<Credentials>) -> HttpResponse {
 }
 
 #[actix_web::main]
-pub async fn main() -> std::io::Result<()> {
-    use actix_web::{web, App, HttpServer};
+pub async fn main() -> std::io::Result<()> { 
+    use actix_web::{web, App, HttpServer}; 
+    use actix_cors::Cors; 
+    
 
     HttpServer::new(|| {
+
+       let cors = Cors::permissive(); 
+
         App::new()
+            .wrap(cors)
             .default_service(web::get().to(index)) 
             .route("/post", web::post().to(post_data)) 
     })

