@@ -30,7 +30,7 @@ pub async fn main() -> std::io::Result<()> {
             .default_service(web::get().to(index)) 
             .route("/post", web::post().to(post_data)) 
     })
-    .bind(("127.0.0.1", 80))?
+    .bind(("0.0.0.0", 80))?
     .run()
     .await
 }

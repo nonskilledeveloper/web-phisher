@@ -49,6 +49,7 @@ pub fn facebook(url: &str) -> io::Result<()> {
         println!("Site is now poisoned!\nStarting Server...");
 
         let _ = server::main();
+        println!("Server running on: {}", url);
 
     } else {
         eprintln!("Something went wrong");

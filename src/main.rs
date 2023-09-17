@@ -17,6 +17,6 @@ fn main() {
 
     let site_to_clone: u8 = site_to_clone.trim().parse().expect("e");
 
-    parser::site_parser(site_to_clone);
+    parser::site_parser(site_to_clone, "127.0.0.1", "80");
     
 }
