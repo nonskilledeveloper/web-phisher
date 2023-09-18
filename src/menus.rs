@@ -27,7 +27,7 @@ pub fn clonto(){
 print!(r"
 You can clone one of the following sites:
 -------------------------------------------
-1) Facebook        | 2) GMAIL  | 3) Tiktok |
+1) Facebook        | 2) Gmail  | 3) Tiktok |
 4) Facebook Mobile | 5) Soon...|           |
 -------------------------------------------
 ");
