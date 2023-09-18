@@ -1,4 +1,4 @@
-## Descripción
+## Description
 
 Web-Phisher is a pentesting and social engineering tool that is thought and inspired as an alternative to [SET](https://github.com/trustedsec/social-engineer-toolkit)
 ### **Disclaimer**
