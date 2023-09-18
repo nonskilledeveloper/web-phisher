@@ -20,7 +20,7 @@ Get it from its official site:  [rust-lang.org](https://www.rust-lang.org/)
 ```bash
 git clone https://github.com/nonskilledeveloper/web-phisher web-phisher/
 cd web-phisher
-sudo cargo build --release
+cargo build --release
 ```
 ## Usage example
 
@@ -29,7 +29,7 @@ sudo cargo build --release
 ls
 web-phisher
 ~/devs/hacking/web-phisher-release 0.1 
-sudo ./web-phisher
+./web-phisher
 Web Phisher - Loading ...
 
 🥚 🐣 🐥 🐓
