@@ -50,7 +50,7 @@ Starting Server...
 Server running on: http://192.168.101.6:80/
 ```
 
-![https://github.com/nonskilledeveloper/web-phisher/blob/master/IMG/Pasted%20image%2020230917232337.png](Server Running)
+![Server Running](https://github.com/nonskilledeveloper/web-phisher/blob/master/IMG/Pasted%20image%2020230917232337.png)
 This is how it looks when the credentials are captured
 
 ```bash
@@ -58,6 +58,6 @@ Data Found: Json: Credentials { email: "nonskilledev@hackermail.com", pass: "h4c
 ```
 ## Pugs?
 
-![https://github.com/nonskilledeveloper/web-phisher/blob/master/IMG/Pug1-modified.png](pug)
+![pug](https://github.com/nonskilledeveloper/web-phisher/blob/master/IMG/Pug1-modified.png)
 
 If you find any bug or pug, feel free to report it [here](https://github.com/nonskilledeveloper/web-phisher/issues) 
