@@ -49,8 +49,8 @@ Site is now poisoned!
 Starting Server...
 Server running on: http://192.168.101.6:80/
 ```
+![server running](https://github.com/nonskilledeveloper/web-phisher/blob/master/IMG/Pasted%20image%2020230917232850.png)
 
-![Server Running](https://github.com/nonskilledeveloper/web-phisher/blob/master/IMG/Pasted%20image%2020230917232337.png)
 This is how it looks when the credentials are captured
 
 ```bash
