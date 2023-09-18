@@ -56,6 +56,10 @@ This is how it looks when the credentials are captured
 ```bash
 Data Found: Json: Credentials { email: "nonskilledev@hackermail.com", pass: "h4ck3rpass#" }
 ```
+
+## Features
+For the moment, this tool only allows you to clone the Facebook website for desktop, I still working on the rest of sites
+
 ## Pugs?
 
 ![pug](https://github.com/nonskilledeveloper/web-phisher/blob/master/IMG/Pug1-modified.png)
